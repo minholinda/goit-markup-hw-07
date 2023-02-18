@@ -34,6 +34,8 @@ button {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .list {
@@ -307,12 +309,19 @@ img {
     background-color: var(--background-color);
     padding-top: 96px;
     padding-bottom: 128px;
+    
 }
 
 .team-container {
     max-width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+.container, .container-mob {
+    max-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+    text-align: center;
 }
 
 .team-title {
@@ -327,6 +336,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    width: 100%;
 }
 
 .team-item {
