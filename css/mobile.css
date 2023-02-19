@@ -7,6 +7,24 @@
         max-width: 428px;
     }
 
+    .mob-menu-list {
+        text-align: start;
+        padding-left: 40px;
+    }
+
+    .mob-address-list {
+        justify-content: start;
+        padding-left: 40px;
+    }
+
+    .mob-tel-link {
+        font-size: 36px;
+    }
+
+    .mob-soc-list {
+        gap: 56px;
+    }
+    
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tab.jpg);
     }
@@ -28,11 +46,13 @@
         max-width: 320px;
     }
 
-    .services {
-        display: none;
-    }
-
     .subscribe-input {
         width: 398px;
     }
+
+    .modal {
+        width: 392px;
+        height: 586px;
+    }
+
 }
