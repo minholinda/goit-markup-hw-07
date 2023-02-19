@@ -2,4 +2,124 @@
     .container {
         max-width: 738px;
     }
+
+    .container-mob {
+        max-width: 738px;
+    }
+
+    .peculiarities {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    
+    
+    .peculiarities-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 24px;
+        row-gap: 72px;
+        width: 100%;
+    }
+
+    .peculiarities-item {
+        width: calc((100% - 24px) / 2);
+    }
+    
+    .peculiarities-wrap {
+        display: none;
+    }
+
+    .peculiarities-subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--main-subtitle-color);
+        margin-bottom: 8px;
+        text-align: start;
+    }
+    
+    .peculiarities-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--main-text-color);
+        width: 100%;
+        text-align: start;
+    }
+    
+    .services {
+        display: none;
+    }
+
+    .team {
+        background-color: var(--background-color);
+        padding-top: 96px;
+        padding-bottom: 104px;
+    }
+
+    .container {
+        max-width: 768px;
+        padding: 0 15px;
+        margin: 0 auto;
+        outline: 1px solid red;
+        text-align: center;
+    }
+
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 24px;
+        row-gap: 64px;
+        width: 100%;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 24px;
+        row-gap: 72px;
+        width: 100%;
+    }
+
+    .customers-item {
+        width: calc((100% - 48px) / 3);
+        height: 88px;
+    }
+
+    .footer {
+        background-color: var(--main-subtitle-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    .footer-soc{
+        margin-left: 24px;
+    }
+
+    .subscribe-form {
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
 }

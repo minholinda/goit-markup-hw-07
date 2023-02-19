@@ -2,4 +2,8 @@
     .container {
         max-width: 450px;
     }
+
+    .container-mob {
+        max-width: 480px;
+    }
 }

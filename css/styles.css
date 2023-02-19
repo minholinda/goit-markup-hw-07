@@ -52,6 +52,12 @@ img {
     margin: 0 auto;
 }
 
+.container-mob {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -228,39 +234,37 @@ img {
 /*-----PECULIARITIES------ */
 
 .peculiarities {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
 }
 
 .peculiarities-container {
-    display: flex;
+    text-align: center;
 }
 
 .peculiarities-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px;
+    width: 100%;
 }
 
 .peculiarities-item {
-    width: calc((100%-72px)4);
+
 }
 
+
 .peculiarities-wrap {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    background: #F4F4FD;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    display: none;
 }
 
 .peculiarities-icon {
 }
 
 .peculiarities-subtitle {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -269,14 +273,16 @@ img {
 }
 
 .peculiarities-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    width: 264px;
+    width: 100%;
+    text-align: justify;
 }
 
-/*-----SERVICES------ */
+-----SERVICES------ */
 
 .services {
     padding-bottom: 120px;
@@ -295,7 +301,7 @@ img {
 }
 
 .services-list {
-    display: flex;
+    display: none;
     gap: 24px;
 }
 
@@ -303,21 +309,20 @@ img {
     width: calc((100%-48px)/3);
 }
 
+
 /*-----TEAM------ */
 
 .team {
     background-color: var(--background-color);
     padding-top: 96px;
     padding-bottom: 128px;
-    
 }
 
 .team-container {
-    max-width: 320px;
 }
 
-.container, .container-mob {
-    max-width: 320px;
+.container {
+    max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
     outline: 1px solid red;
@@ -335,12 +340,12 @@ img {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 72px;
     width: 100%;
 }
 
 .team-item {
-    /* width: calc((100%-72px)/4); */
     width: 100%;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -403,8 +408,8 @@ img {
 /*-----customers------ */
 
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container {
@@ -424,11 +429,16 @@ img {
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 16px;
+    row-gap: 72px;
+    width: 100%;
 }
 
+
 .customers-item {
-    width: calc((100%-120px)/6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -457,16 +467,23 @@ img {
 
 .footer {
     background-color: var(--main-subtitle-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 72px;
+    width: 320px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer-logo-wrap {}
+.footer-logo-wrap {
+}
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
@@ -503,8 +520,7 @@ img {
     width: 264px;
 }
 
-.footer-soc{
-    margin-left: 120px;
+.footer-soc {
 }
 
 .footer-subtitle {
@@ -548,7 +564,11 @@ img {
 }
 
 .subscribe {
-    margin-left: 80px;;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
 .subscribe-title {
@@ -562,6 +582,9 @@ img {
 
 .subscribe-form {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .subscribe-input {
@@ -572,6 +595,7 @@ img {
     border-radius: 4px;
     padding-left: 16px;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .subscribe-input:placeholder {
@@ -584,7 +608,8 @@ img {
 
 .subscribe-btn {
     display: flex;
-    margin-left: 24px;
+    width: 165px;
+    height: 40px;
     padding-left: 24px;
     padding-right: 24px;
     align-items: center;
@@ -747,8 +772,10 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 576px;
+    /* width: 408px;
+    min-height: 576px; */
+    width: 392px;
+    min-height: 586;
     background-color: #FCFCFC;
     border-radius: 4px;
     padding: 24px;
