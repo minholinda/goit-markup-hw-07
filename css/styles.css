@@ -186,26 +186,36 @@ img {
 
 .hero {
     max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob-2x.jpg);;
+    }
+}
+
 .hero-container {
     text-align: center;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 25px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
-    width: 507px;
-    margin: 0 auto 48px;
+    /* width: 507px; */
+    margin: 0 auto 72px;
 }
 
 .hero-btn {
@@ -476,7 +486,6 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     row-gap: 72px;
-    width: 320px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -583,7 +592,6 @@ img {
 .subscribe-form {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
 }
 

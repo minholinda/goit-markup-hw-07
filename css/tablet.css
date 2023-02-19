@@ -7,11 +7,29 @@
         max-width: 738px;
     }
 
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+    }
+}
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin: 0 auto 40px;
+    }
+
     .peculiarities {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-    
     
     .peculiarities-list {
         display: flex;
@@ -25,7 +43,7 @@
     .peculiarities-item {
         width: calc((100% - 24px) / 2);
     }
-    
+
     .peculiarities-wrap {
         display: none;
     }
@@ -105,9 +123,11 @@
     
     .footer-container {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
-        width: 100%;
+        justify-content: start;
+        max-width: 552px;
+        text-align: start;
     }
 
 
@@ -115,11 +135,25 @@
         margin-left: 24px;
     }
 
-    .subscribe-form {
-        display: block;
+    .subscribe {
+        width: 320px;
+        display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
+        text-align: start;
+        justify-content: start;
     }
+
+    .subscribe-form {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .subscribe-input {
+        width: 264px;
+        height: 40px;
+    }
+    
+    .subscribe-btn {
+        margin-left: 24px;
 }
