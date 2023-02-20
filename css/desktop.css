@@ -93,6 +93,14 @@
     }
 }
 
+.hero {
+    margin: 0 auto;
+}
+
+.hero-container {
+    margin: 0 auto;
+}
+
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
