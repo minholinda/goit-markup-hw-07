@@ -12,9 +12,6 @@
         border-bottom: 1px solid #E7E9FC;
     }
 
-    .container {
-            max-width: 738px;
-    }
     
     .header-navigation {
         display: flex;
@@ -77,6 +74,7 @@
     .address-list {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         margin-left: 0 auto;
     }
     
@@ -120,9 +118,6 @@
         padding-bottom: 96px;
     }
 
-    .containercontainer .peculiarities-container .container-mob {
-        max-width: 738px;
-    }
 
     .peculiarities-list {
         display: flex;
@@ -168,11 +163,10 @@
         padding-bottom: 104px;
     }
 
-    .container {
+    .team-container {
         max-width: 552px;
         padding: 0 15px;
         margin: 0 auto;
-        outline: 1px solid red;
         text-align: center;
     }
 
@@ -193,6 +187,9 @@
 
     .customers-container {
         max-width: 552px;
+        padding: 0 15px;
+        margin: 0 auto;
+        text-align: center;
     }
     
     .customers-list {
